@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Project" max_length="40" name="x_92712_custom_tab_project" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="4000" name="comments" type="journal"/>
+        <element attributes="encode_utf8=false" label="Department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Description" max_length="65536" name="description" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number 2" max_length="40" name="number_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Project Name" max_length="80" name="project_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="start_date" type="glide_date_time"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
